@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #f8f8ff; 
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    box-shadow: 0px 3px 10px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 1.3rem;
+    height: 15vh;
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
+    height: 130px;
+}
+
+.list-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.list-navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;           /* Retira os bullets points */
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;      /* Retira a linha sublinhada */
+    font-weight: 500;
+    color: white;
+}
+
+.navbar .list-navbar a:hover {
+    color: #50FFDF;
+}
+
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+ 
+
+.cadastro-button {
+    background-color: transparent;
+   border: solid 1px;
+    border-radius: 10px;
+    border-color: #ffff;
+    padding: 5px 15px;
+    margin-right: 20px;
+  
+}
+
+.cadastro-button a {
+    text-decoration: none;      /* Retira a linha sublinhada */
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+.login-button {
+    background-color: #50FFDF;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 25px;
+    font-weight: 900;
+}
+.login-button a {
+    text-decoration: none;      /* Retira a linha sublinhada */
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+
+
+/* HOME */
+
+#home {
+    background-image: url(../assets/background/home3v3.jpg);
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.home {
+    margin-left: 45px;
+    
+}
+
+
+.home button {
+    font-weight: 900;
+    font-size: 20px;
+    padding: 20px 40px;
+    background-color: #50FFDF   ;
+    border: solid 0px;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.home button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.home p {
+    font-size: 26px;
+    margin-top: 10px;
+}
+.home h1 {
+    font-size: 46px;
+    font-weight: 600;
+}
+
+/* SERVIÇO */
+
+
+#servico {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 9vh;
+    font-size: 20px;
+    
+}
+
+
+.servico .container {
+    display: flex;
+    border: solid;
+}
+
+
+.container-servico {
+    background-color: transparent; 
+    padding: 20px; 
+    margin: 80px; 
+    border: 3px solid #50FFDF; 
+    border-radius: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    text-align: center; 
+}
+
+.container-servico .box{
+
+    flex: 1;
+    justify-content: space-around;
+
+}
+
+.container-servico img{
+
+    width: 130px;
+    height: 130px;
+
+}
+
+.servico .container-servico .box{
+
+    flex: 1;
+    justify-content: space-around;
+}
+
+/* SOBRE NOS */
+
+#sobre-nos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15vh;
+    font-size: 20px;
+    min-height: 100vh;
+    background-image: url(../assets/background/sobre-nos_degrade.jpg);
+}
+
+.sobre-nos img {
+    width: 500px;
+    height: 500px;
+}
+
+.sobre-nos .container-texto {
+    background-color: transparent; 
+    margin: 80px; 
+    border: 1px solid #50FFDF; 
+    border-radius: 30px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center; 
+}
+
+.container-texto .box2 {
+
+    background-color: #0F1128; 
+    padding: 100px 20px;
+    height: 90%;
+    width: 80%;
+    border-radius: 30px; 
+    justify-content: space-between; 
+    flex-direction: column;
+}
+.sobre-nos .container-servico{
+
+    background-color: transparent; 
+    padding: 20px; 
+    margin: 80px; 
+    border: 1px solid #50FFDF; 
+    border-radius: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    text-align: center; 
+
+}
+
+.sobre-nos .container-servico img{
+
+    width: 200px;
+    height: 200px;
+}
+
+.sobre-nos .container-servico .box{
+
+    flex: 1;
+    justify-content: space-around;
+    line-height: 25px;
+}
+
+/* FOOTER: */
+
+.footer {
+    
+    background-color:#50FFDF;
+    height: var(--tamanho-footer);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+}
+
+
+.footer h4 {
+
+    margin: 0px;
+}
